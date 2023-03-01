@@ -1,0 +1,29 @@
+Comandos para utilizar chave SSH no GitBash
+
+-No CLI(criando chaves)
+
+>ssh-keygen -t ed25519 -C "email"
+
+entrar em ssh (pwd-mostra o caminho completo)
+
+>cat id_ed25519.pub
+
+copiar a chave pública no Github
+
+-No CLI, dentro do ssh (iniciando um agente)
+
+> eval $(ssh-agent -s)
+> ssh-add id_ed25519
+
+
+Comandos para "clonar" arquivo do Github
+
+-No CLI 
+
+> git clone Caminho_SSH
+
+Comandos para enviar arquivos para o repositório remoto
+
+> git add .
+> git commit -m "Inclusão das anotações"
+> git push origin main
